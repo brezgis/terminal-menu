@@ -82,6 +82,13 @@ init_config() {
         {"name": "spotify_player", "cmd": "spotify_player", "desc": "Spotify TUI"},
         {"name": "cava", "cmd": "cava", "desc": "Audio visualizer"}
       ]
+    },
+    "🤖 AI": {
+      "entries": [
+        {"name": "Ollama (qwen3:8b)", "cmd": "ollama run qwen3:8b", "desc": "Local LLM chat"},
+        {"name": "Ollama (llama3.1)", "cmd": "ollama run llama3.1:8b", "desc": "Local LLM chat"},
+        {"name": "Claude Code", "cmd": "claude", "desc": "Anthropic CLI agent"}
+      ]
     }
   }
 }
