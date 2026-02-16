@@ -84,11 +84,11 @@ init_config() {
           {"name": "cava", "cmd": "cava", "desc": "Audio visualizer"}
         ],
         "📻 SomaFM Radio": [
-          {"name": "Groovesalad", "cmd": "curl -s https://somafm.com/groovesalad256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Ambient/downtempo"},
-          {"name": "DEF CON Radio", "cmd": "curl -s https://somafm.com/defcon256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Hacker conference"},
-          {"name": "Drone Zone", "cmd": "curl -s https://somafm.com/dronezone256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Atmospheric ambient"},
-          {"name": "Lush", "cmd": "curl -s https://somafm.com/lush130.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Sensual female vocals"},
-          {"name": "Secret Agent", "cmd": "curl -s https://somafm.com/secretagent130.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Bond soundtracks & lounge"}
+          {"name": "Groovesalad", "cmd": "mpv --no-video https://ice1.somafm.com/groovesalad-256-mp3", "desc": "Ambient/downtempo"},
+          {"name": "DEF CON Radio", "cmd": "mpv --no-video https://ice1.somafm.com/defcon-256-mp3", "desc": "Hacker conference"},
+          {"name": "Drone Zone", "cmd": "mpv --no-video https://ice1.somafm.com/dronezone-256-mp3", "desc": "Atmospheric ambient"},
+          {"name": "Lush", "cmd": "mpv --no-video https://ice1.somafm.com/lush-128-mp3", "desc": "Sensual female vocals"},
+          {"name": "Secret Agent", "cmd": "mpv --no-video https://ice1.somafm.com/secretagent-128-mp3", "desc": "Bond soundtracks & lounge"}
         ]
       }
     }
