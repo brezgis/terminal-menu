@@ -87,8 +87,8 @@ init_config() {
           {"name": "Groovesalad", "cmd": "curl -s https://somafm.com/groovesalad256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Ambient/downtempo"},
           {"name": "DEF CON Radio", "cmd": "curl -s https://somafm.com/defcon256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Hacker conference"},
           {"name": "Drone Zone", "cmd": "curl -s https://somafm.com/dronezone256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Atmospheric ambient"},
-          {"name": "Lush", "cmd": "curl -s https://somafm.com/lush256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Sensual daydreams"},
-          {"name": "Secret Agent", "cmd": "curl -s https://somafm.com/secretagent256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Bond soundtracks & lounge"}
+          {"name": "Lush", "cmd": "curl -s https://somafm.com/lush130.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Sensual female vocals"},
+          {"name": "Secret Agent", "cmd": "curl -s https://somafm.com/secretagent130.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Bond soundtracks & lounge"}
         ]
       }
     }
