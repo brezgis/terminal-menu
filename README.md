@@ -24,15 +24,17 @@ The small internet is alive — BBSes with active communities, MUDs with players
 
 - [gum](https://github.com/charmbracelet/gum) — the menu UI
 - [luit](https://invisible-island.net/luit/) — character encoding for BBSes (optional but recommended)
+- [lynx](https://lynx.invisible-island.net/) — text-mode web/Gopher browser (for Gopherholes)
+- [mpv](https://mpv.io/) — media player (for SomaFM radio streams)
 - python3 — for config parsing
 - telnet — for BBS/telnet connections
 
 ```bash
 # macOS
-brew install gum luit telnet
+brew install gum luit telnet lynx mpv
 
 # Linux (Debian/Ubuntu)
-sudo apt install luit telnet
+sudo apt install luit telnet lynx mpv
 # Install gum: https://github.com/charmbracelet/gum#installation
 ```
 
@@ -91,7 +93,7 @@ This opens the config file (`~/.config/terminal-menu/entries.json`) in your edit
     "🌐 Small Internet": {
       "subcategories": {
         "🖥️  BBSes": [
-          {"name": "My Favorite BBS", "cmd": "telnet bbs.example.com", "desc": "A cool BBS"}
+          {"name": "My Favorite BBS", "cmd": "luit -encoding CP437 telnet bbs.example.com", "desc": "A cool BBS"}
         ]
       }
     },
@@ -123,29 +125,37 @@ menu reset
 
 ### 🌐 Small Internet
 
-**BBSes** — Bulletin Board Systems, the original social networks. Connect via telnet to message boards that have been running since the 90s (some since the 80s). Real communities with real people discussing everything from DOS hardware to daily life. Messages federate between BBSes through networks like FidoNet and DOVE-Net.
+**BBSes** — Bulletin Board Systems, the original social networks. Connect via telnet to message boards that have been running since the 90s (some since the 80s). Real communities with real people discussing everything from DOS hardware to daily life. Messages federate between BBSes through networks like [FidoNet](https://en.wikipedia.org/wiki/FidoNet) and DOVE-Net — your post on one BBS propagates to every other BBS in the network.
 
-- Dawn of Demise, ISCABBS, Archaic Binary, Capitol City Online, Palantir BBS
+Included: Dawn of Demise, ISCABBS, Archaic Binary, Capitol City Online, Palantir BBS
 
-**MUDs & Games** — Text-based multiplayer worlds. Legend of the Red Dragon is the classic BBS door game. Aardwolf is one of the most active MUDs still running. Telehack simulates the 1980s internet.
+**MUDs & Games** — Text-based multiplayer worlds. [Legend of the Red Dragon](http://lord.stabs.org/) is the classic BBS door game. [Aardwolf](http://www.aardwolf.com/) is one of the most active MUDs still running. [Telehack](http://telehack.com/) simulates the 1980s internet.
 
-**Telnet Toys** — Fun stuff: Mapscii (zoomable world map in Braille characters), NASA's solar system database, live Bitcoin price.
+**Telnet Toys** — Fun stuff: [Mapscii](https://github.com/rastapasta/mapscii) (zoomable world map in Braille characters), NASA's solar system database, live Bitcoin price.
 
-**Gopherholes** — Gopher is a protocol from 1991 that lost to the web. It's pure hierarchical menus and plain text. No JavaScript, no ads, no tracking. There's a small revival community that loves it.
+**Gopherholes** — [Gopher](https://en.wikipedia.org/wiki/Gopher_(protocol)) is a protocol from 1991 that competed with the web and lost. It's pure hierarchical menus and plain text. No JavaScript, no ads, no tracking. There's a small but active revival community. Browsed via [lynx](https://lynx.invisible-island.net/).
 
-**Tildes** — Shared Unix servers where you get a shell account and a community. SSH in, write scripts, make a homepage, chat with neighbors. The BBS ethos on modern Unix. You need to apply for an account (links in the menu).
+**Tildes** — Shared Unix servers where you get a shell account and a community. SSH in, write scripts, make a homepage, chat with neighbors. The BBS ethos reborn on modern Unix. You need to apply for an account (links in the menu). Learn more at [tildeverse.org](https://tildeverse.org/).
 
 ### 🎮 Toys
 
-Terminal eye candy: cbonsai, cmatrix, sl, fortune | cowsay.
+Terminal eye candy: cbonsai (grow a bonsai tree), cmatrix (Matrix rain), sl (steam locomotive), fortune | cowsay.
 
 ### 🔧 Tools
 
-Your daily drivers: lazygit, neovim, htop, glow, fastfetch.
+Daily drivers: lazygit (Git TUI), neovim, micro, glow (markdown reader), fastfetch (system info).
 
 ### 🎵 Media
 
-spotify_player, cava.
+**Music Apps** — spotify_player (Spotify TUI).
+
+**SomaFM Radio** — [SomaFM](https://somafm.com/) is independent, listener-supported internet radio that's been running since 2000. No ads, no tracking, just good music. Streams play via [mpv](https://mpv.io/) in the terminal. Ctrl+C to stop. Stations included:
+
+- **Groovesalad** — ambient/downtempo
+- **DEF CON Radio** — hacker conference vibes
+- **Drone Zone** — atmospheric ambient
+- **Lush** — mellow vocals & electronic
+- **Secret Agent** — Bond soundtracks & lounge
 
 ## BBS Tips for Beginners
 
@@ -165,6 +175,8 @@ Some starting points beyond this menu:
 - [Floodgap Gopher](gopher://gopher.floodgap.com) — the Gopher hub
 - [Gemini Protocol](https://geminiprotocol.net/) — the modern small web
 - [tildeverse.org](https://tildeverse.org/) — directory of tilde communities
+- [Awesome Gemini](https://github.com/kr1sp1n/awesome-gemini) — curated Gemini resources
+- [SomaFM](https://somafm.com/) — independent internet radio since 2000
 
 ## License
 
