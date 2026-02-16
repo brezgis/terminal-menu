@@ -87,7 +87,7 @@ init_config() {
           {"name": "Groovesalad", "cmd": "mpv --no-video https://ice1.somafm.com/groovesalad-256-mp3", "desc": "Ambient/downtempo"},
           {"name": "DEF CON Radio", "cmd": "mpv --no-video https://ice1.somafm.com/defcon-256-mp3", "desc": "Hacker conference"},
           {"name": "Drone Zone", "cmd": "mpv --no-video https://ice1.somafm.com/dronezone-256-mp3", "desc": "Atmospheric ambient"},
-          {"name": "Lush", "cmd": "mpv --no-video https://ice1.somafm.com/lush-128-mp3", "desc": "Sensual female vocals"},
+          {"name": "Lush", "cmd": "mpv --no-video https://ice1.somafm.com/lush-128-mp3", "desc": "Mellow vocals & electronic"},
           {"name": "Secret Agent", "cmd": "mpv --no-video https://ice1.somafm.com/secretagent-128-mp3", "desc": "Bond soundtracks & lounge"}
         ]
       }
