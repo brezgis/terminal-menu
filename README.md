@@ -172,7 +172,7 @@ The small internet is everything that isn't the commercial web. BBSes, Gopher, G
 
 Some starting points beyond this menu:
 - [Telnet BBS Guide](https://www.telnetbbsguide.com/) — directory of 983 active BBSes
-- [Floodgap Gopher](gopher://gopher.floodgap.com) — the Gopher hub
+- [Floodgap Gopher](https://gopher.floodgap.com/gopher/) — the Gopher hub (web proxy; use `lynx gopher://gopher.floodgap.com` for the real thing)
 - [Gemini Protocol](https://geminiprotocol.net/) — the modern small web
 - [tildeverse.org](https://tildeverse.org/) — directory of tilde communities
 - [Awesome Gemini](https://github.com/kr1sp1n/awesome-gemini) — curated Gemini resources
