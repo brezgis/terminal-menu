@@ -50,8 +50,8 @@ init_config() {
           {"name": "Bitcoin Ticker", "cmd": "telnet ticker.bitcointicker.co 10080", "desc": "Live BTC price"}
         ],
         "🕳️  Gopherholes": [
-          {"name": "Floodgap Gopher", "cmd": "curl -s gopher://gopher.floodgap.com | less", "desc": "The main Gopher hub"},
-          {"name": "SDF Gopherspace", "cmd": "curl -s gopher://sdf.org | less", "desc": "SDF public access Unix"}
+          {"name": "Floodgap Gopher", "cmd": "lynx gopher://gopher.floodgap.com", "desc": "The main Gopher hub"},
+          {"name": "SDF Gopherspace", "cmd": "lynx gopher://sdf.org", "desc": "SDF public access Unix"}
         ],
         "🏠 Tildes": [
           {"name": "tilde.town", "cmd": "ssh tilde.town", "desc": "Apply: tilde.town/signup"},
