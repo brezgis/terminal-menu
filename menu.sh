@@ -78,13 +78,19 @@ init_config() {
       ]
     },
     "🎵 Media": {
-      "entries": [
-        {"name": "spotify_player", "cmd": "spotify_player", "desc": "Spotify TUI"},
-        {"name": "cava", "cmd": "cava", "desc": "Audio visualizer"},
-        {"name": "SomaFM Groovesalad", "cmd": "curl -s https://somafm.com/groovesalad256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Ambient/downtempo radio"},
-        {"name": "SomaFM DEF CON", "cmd": "curl -s https://somafm.com/defcon256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Hacker conference radio"},
-        {"name": "SomaFM Drone Zone", "cmd": "curl -s https://somafm.com/dronezone256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Atmospheric ambient"}
-      ]
+      "subcategories": {
+        "🎧 Music Apps": [
+          {"name": "spotify_player", "cmd": "spotify_player", "desc": "Spotify TUI"},
+          {"name": "cava", "cmd": "cava", "desc": "Audio visualizer"}
+        ],
+        "📻 SomaFM Radio": [
+          {"name": "Groovesalad", "cmd": "curl -s https://somafm.com/groovesalad256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Ambient/downtempo"},
+          {"name": "DEF CON Radio", "cmd": "curl -s https://somafm.com/defcon256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Hacker conference"},
+          {"name": "Drone Zone", "cmd": "curl -s https://somafm.com/dronezone256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Atmospheric ambient"},
+          {"name": "Lush", "cmd": "curl -s https://somafm.com/lush256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Sensual daydreams"},
+          {"name": "Secret Agent", "cmd": "curl -s https://somafm.com/secretagent256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Bond soundtracks & lounge"}
+        ]
+      }
     }
   }
 }
