@@ -80,7 +80,10 @@ init_config() {
     "🎵 Media": {
       "entries": [
         {"name": "spotify_player", "cmd": "spotify_player", "desc": "Spotify TUI"},
-        {"name": "cava", "cmd": "cava", "desc": "Audio visualizer"}
+        {"name": "cava", "cmd": "cava", "desc": "Audio visualizer"},
+        {"name": "SomaFM Groovesalad", "cmd": "curl -s https://somafm.com/groovesalad256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Ambient/downtempo radio"},
+        {"name": "SomaFM DEF CON", "cmd": "curl -s https://somafm.com/defcon256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Hacker conference radio"},
+        {"name": "SomaFM Drone Zone", "cmd": "curl -s https://somafm.com/dronezone256.pls | grep File1 | cut -d= -f2 | xargs afplay", "desc": "Atmospheric ambient"}
       ]
     }
   }
