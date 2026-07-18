@@ -34,9 +34,11 @@ The small internet is alive — BBSes with active communities, MUDs with players
 brew install gum luit telnet lynx mpv
 
 # Linux (Debian/Ubuntu)
-sudo apt install luit telnet lynx mpv
+sudo apt install x11-utils telnet lynx mpv   # luit ships inside x11-utils
 # Install gum: https://github.com/charmbracelet/gum#installation
 ```
+
+Only gum and python3 are needed to run the menu itself — everything else is for the default entries. Same goes for the Toys and Tools entries (cbonsai, cmatrix, lazygit, htop, ...): install the ones you want, delete the rest from the config.
 
 ### Setup
 
@@ -143,11 +145,11 @@ Terminal eye candy: cbonsai (grow a bonsai tree), cmatrix (Matrix rain), sl (ste
 
 ### 🔧 Tools
 
-Daily drivers: lazygit (Git TUI), neovim, micro, glow (markdown reader), fastfetch (system info).
+Daily drivers: lazygit (Git TUI), htop (process monitor), neovim, glow (markdown reader), fastfetch (system info).
 
 ### 🎵 Media
 
-**Music Apps** — spotify_player (Spotify TUI).
+**Music Apps** — spotify_player (Spotify TUI), cava (audio visualizer).
 
 **SomaFM Radio** — [SomaFM](https://somafm.com/) is independent, listener-supported internet radio that's been running since 2000. No ads, no tracking, just good music. Streams play via [mpv](https://mpv.io/) in the terminal. Ctrl+C to stop. Stations included:
 

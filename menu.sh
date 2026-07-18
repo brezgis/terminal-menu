@@ -235,7 +235,7 @@ for e in entries:
         gum style --foreground "$GREEN" "Launching: $name"
         gum style --foreground "$SURFACE" "$cmd"
         echo ""
-        eval "$cmd"
+        eval "$cmd" || true  # don't let a failed/interrupted entry kill the menu (set -e)
     fi
 }
 
